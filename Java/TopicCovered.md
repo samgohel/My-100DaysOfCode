@@ -11,24 +11,17 @@
   - Memory management
 - Variables And Data Type
 
-  - Variables in Java
-  - Data Types in Java
   - Autoboxing and Unboxing
   - Type Conversion in Java
 
 - Operators
 
-  - Various Operators In Java
-
 - Input And Output
-
   - Scanner
   - Reader
   - Writer
 
 * Methods
-  - Overloading
-  - Overriding
 
 - File Operations
 
