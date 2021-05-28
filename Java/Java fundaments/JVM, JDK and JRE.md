@@ -11,7 +11,9 @@
 - JDK that are targeted for different types of development. The available packages are Java Enterprise Edition (Java EE), Java Standard Edition (Java SE), and Java Mobile Edition (Java ME).
 
 * Java Bigger Picture
+
   ![The Bigger Picture](https://github.com/samgohel/My-100DaysOfCode/blob/main/JavaPicture.PNG)
+
   [Reference](https://docs.oracle.com/javase/8/docs/)
 
 ---
@@ -66,6 +68,7 @@
 
 - JVM Contain Following Components
   ![JVM Bigger Picture](https://github.com/samgohel/My-100DaysOfCode/blob/main/JVM.PNG)
+
   [Reference](https://www.freecodecamp.org/news/jvm-tutorial-java-virtual-machine-architecture-explained-for-beginners/)
 
 - JVM is divided into three main subsystems
@@ -215,7 +218,7 @@
 
 ---
 
-### Runtime Data Area (JVM Memory Model).
+> ### Runtime Data Area (JVM Memory Model).
 
 - Runtime Data Area subsystem is divided into five major components.
 
@@ -292,10 +295,67 @@
 
 ---
 
-### Execution Engine (Java Compiler & Interpreter).
+> ### Execution Engine (Java Compiler & Interpreter).
 
----
+- The byte-code, which is assigned to the Runtime Data Area, will be executed by the Execution Engine.
 
-### Evolution of the Java Memory Architecture
+- The Execution Engine reads the byte-code and executes it piece by piece.
+
+**_Interpreter_**
+
+- It reads the byte code and interprets(convert) into the machine code(native code) and executes them in a sequential manner.
+
+- The interpreter interprets the byte-code faster but executes slowly.
+
+- The disadvantage of the interpreter is that when one method is called multiple times, every time a new interpretation is required.
+
+**_JIT Compiler_**
+
+- The JIT Compiler neutralizes the disadvantage of the interpreter.
+
+- The JIT compiler aids in improving the performance of Java programs by compiling byte-code into native machine code at run time.
+
+- The Execution Engine will be using the help of the interpreter in converting byte code, but when it finds repeated code it uses the JIT compiler, which compiles the entire byte-code and changes it to native code.
+
+- Methods are not compiled when they are called the first time. For each and every method, the JVM maintains a call count, which is incremented every time the method is called.
+
+- The methods are interpreted by the JVM until the call count exceeds the JIT compilation threshold (the JIT compilation threshold improves performance and helps the JVM to start quickly.
+
+- Therefore, very frequently used methods are compiled as soon as the JVM has started, and less frequently used methods are compiled later.
+
+- This native code will be used directly for repeated method calls, which improve the performance of the system.
+
+  - Intermediate Code Generator
+
+    - Produces intermediate code.
+
+  - Code Optimizer
+
+    - Responsible for optimizing the intermediate code generated above.
+
+  - Target Code Generator
+
+    - Responsible for Generating Machine Code or Native Code.
+
+  - Profiler
+    - A special component, responsible for finding hotspots, i.e. whether the method is called multiple times or not.
+
+**Garbage Collector**
+
+- Collects and removes unreferenced objects.
+
+- It is a daemon thread which always runs in the background.
+
+- Garbage Collection can be triggered by calling System.gc(), but the execution is not guaranteed.
+
+- Garbage collection of the JVM collects the objects that are created.
+
+**_Java Native Interface (JNI)_**
+
+- JNI will be interacting with the Native Method Libraries and provides the Native Libraries required for the Execution Engine.
+
+**_Native Method Libraries_**
+
+- This is a collection of the Native Libraries, which is required for the Execution Engine.
 
 ---
