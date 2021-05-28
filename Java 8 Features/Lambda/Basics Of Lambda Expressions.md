@@ -6,6 +6,8 @@
 
 * Enables Functional Programing
 
+* In functional programming, code can be treated as data. For this purpose Lambda expressions are introduced. They can be used to pass a block of code to another method or object.
+
 * Readable and cosine code
 
 * Sequential and parallel execution support by passing behavior as an argument in methods.
