@@ -62,6 +62,7 @@
   - Default value false.
 
 - [Reference](https://www.javatpoint.com/java-data-types)
+
   ![Basic](https://github.com/samgohel/My-100DaysOfCode/blob/main/DataTypes.PNG)
 
 > ### Non-Primitive(Reference) Data type
