@@ -7,7 +7,7 @@
 - Check if there are more than one element in array then compare index of 0 and index of 1.
 - else in for loop check from index 2 to n and compare each with min and max and set new min max.
 
-* Time Complexity
+* **_Time Complexity_**
   - O(n)
   - Total number of comparisons is 1 + 2(n-2) in the worst case and 1 + n – 2 in the best case.
   - Worst case occurs when elements are sorted in descending order and the best case occurs when elements are sorted in ascending order.
@@ -21,7 +21,7 @@
 - one comparison for determine the true max of two element.
 - one comparison for determine the true min of two element.
 - return min and max pair.
-- Time Complexity
+- **_Time Complexity_**
   - O(N)
   - Total number of comparisons: let the number of comparisons be T(n).
 
@@ -48,5 +48,5 @@ if n is power of 2, then we can write T(n) as
 
 * For rest of the element pick them in pair & compare their max and min with actual min and max respectively.
 
-- Time Complexity
+- **_Time Complexity_**
   - O(n)

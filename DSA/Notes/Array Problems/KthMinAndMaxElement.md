@@ -4,7 +4,7 @@
 
 - Sort given array using any sorting algo. having O(N log N) sorting algo. like merge sort or heap sort.
 - Return the element at index k - 1 in sorted array.
-- Time Complexity
+- **_Time Complexity_**
   - O(N log N)
 
 > ## Using Bubble k times
